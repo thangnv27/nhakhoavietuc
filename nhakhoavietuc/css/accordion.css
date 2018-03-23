@@ -1,0 +1,90 @@
+.wpv-accordion {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wpv-accordion .tab {
+    position: relative;
+    font-size: inherit;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    outline: none;
+    border-top: 1px solid #F5F5F6;
+}
+.wpv-accordion .tab:first-child {
+    border-top: 0;
+}
+.wpv-accordion .tab.ui-state-hover,
+.wpv-accordion .tab.ui-state-active,
+.wpv-accordion .tab.ui-state-selected {
+    background-color: #F5F5F6;
+    border-color: #F5F5F6;
+}
+.wpv-accordion .tab.ui-state-hover .ui-icon:after,
+.wpv-accordion .tab.ui-state-active .ui-icon:after,
+.wpv-accordion .tab.ui-state-selected .ui-icon:after {
+    content: "\e60f";
+    color: #B5E0FC !important;
+    font-family: theme;
+}
+.wpv-accordion .tab.ui-state-active.has-bg {
+    background: transparent;
+}
+.wpv-accordion .tab.ui-state-active.has-bg .inner {
+    opacity: 0;
+}
+.wpv-accordion .tab .inner {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    outline: none !important;
+    display: block;
+    font: normal 17px/22px "Arial";
+    color: #ffffff;
+    background-color: #3695EB;
+    transition: opacity .3s ease;
+}
+.wpv-accordion .tab .inner:hover {
+    text-decoration: none;
+}
+.wpv-accordion .tab .ui-icon {
+    width: 40px;
+    line-height: 54px;
+    font-size: 17px;
+    font-style: normal;
+    display: none;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+}
+.wpv-accordion .tab .ui-icon:after {
+    content: "\e60e";
+    color: #B5E0FC;
+    font-family: theme;
+}
+.wpv-accordion .pane .inner {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+}
+.wpv-accordion .pane-wrapper {
+    background-position: top center;
+    background-size: cover;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #F5F5F6;
+}
+.wpv-accordion .pane-wrapper:first-child,
+.wpv-accordion .pane-wrapper:first-child .tab .inner {
+    border-radius: 4px 4px 0 0;
+}
+.wpv-accordion .pane-wrapper:last-child,
+.wpv-accordion .pane-wrapper:last-child .tab:not(.ui-state-active) .inner {
+    border-radius: 0 0 4px 4px;
+}
+
+.wpv-accordion .ui-widget-content{
+    border: none;
+    background: none;
+    padding: 0
+}
